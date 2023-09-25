@@ -27,6 +27,10 @@ public class CardTrick {
             c.setSuit(Card.SUITS[rndm.nextInt(4)]); //insert call to random number between 0-3 here])
             magicHand [i] = c; // stores card object in array 
             System.out.println(magicHand[i].getSuit() + " " + magicHand[i].getValue()); 
+            // Create a hard-coded luckyCard with a card number and suit
+        Card luckyCard = new Card(); 
+        luckyCard.setValue(7); 
+        luckyCard.setSuit("Hearts"); 
             
         }
         
@@ -67,6 +71,8 @@ public class CardTrick {
                     + "is not in the magic hand :(");
             
         }
+
+        
         input.close();
     }
     
